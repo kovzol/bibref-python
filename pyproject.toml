@@ -7,7 +7,7 @@ name = "bibref-python"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
-version = "2026.3.18"
+version = "2026.3.18.1"
 description = "Python wrapper for the bibref command-line tool for working with biblical references"
 authors = [
     { name="Zoltán Kovács" }
