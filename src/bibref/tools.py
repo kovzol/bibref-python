@@ -39,7 +39,7 @@ def spawn_bibref():
 def getrefs_maxlength(getrefs_input):
     """
     Returns the length of the longest match.
-    :param getrefs_input: All parameters of getref as string
+    :param getrefs_input: All parameters of getrefs as string
     :return: The length of the longest match
     """
     global bibref
@@ -218,7 +218,7 @@ def nearest12():
     """
     global bibref
     spawn_bibref()
-    bibref.timeout = bibref_default_timeout
+    bibref.timeout = bibref_default_timeout_max
     command = "nearest12"
     bibref.sendline(command)
     bibref.expect("Nearest Jaccard distance is ([0-9]+\\.[0-9]+) with substring (\\w+).")
