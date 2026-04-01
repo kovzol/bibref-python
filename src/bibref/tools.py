@@ -223,3 +223,26 @@ def maxresults(m):
     maxresults = bibref.match.groups()
     return int(maxresults[0])
 
+def text1(greektext):
+    return text_n(1,greektext)
+
+def text2(greektext):
+    return text_n(2,greektext)
+
+def latintext1(latintext):
+    return latintext_n(1,latintext)
+
+def latintext2(latintext):
+    return latintext_n(2,latintext)
+
+def lookup1(passage):
+    return lookup_n(1,passage)
+
+def lookup2(passage):
+    return lookup_n(2,passage)
+
+def find1(bible):
+    return find_n(1,bible)
+
+def find2(bible):
+    return find_n(2,bible)
