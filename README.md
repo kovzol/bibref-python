@@ -17,9 +17,9 @@ from bibref.tools import *
 
 print(getrefs_maxlength("SBLGNT LXX Psalms 2"))
 
-text_n(1, "υιος μου ει συ εγω σημερον γεγεννηκα σε")
-print(find_n(1, "LXX"))
-print(find_n(1, "StatResGNT"))
+text1("υιος μου ει συ εγω σημερον γεγεννηκα σε")
+print(find1("LXX"))
+print(find1("StatResGNT"))
 ```
 
 ### Search for names appearing in the beginning of Matthew 1
@@ -38,8 +38,8 @@ names = [ "Αβρααμ", "Ισαακ", "Ιακωβ", "Ιουδα",
 maxresults(10000)
 
 for name in names:
-    text_n(1, name)
-    occurrences = find_n(1, "LXX")
+    text1(name)
+    occurrences = find1("LXX")
     print(name, len(occurrences))
 ```
 
